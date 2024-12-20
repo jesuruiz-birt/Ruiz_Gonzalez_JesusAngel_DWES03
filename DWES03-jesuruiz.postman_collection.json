@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "eceb8893-8c25-433b-8c4a-d87517383ee1",
+		"name": "DWES03-jesuruiz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34146066"
+	},
+	"item": [
+		{
+			"name": "http://localhost/ruiz_gonzalez_jesusangel_DWES03_TE2/v1/public/discos/get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/ruiz_gonzalez_jesusangel_DWES03_TE2/v1/public/discos/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"ruiz_gonzalez_jesusangel_DWES03_TE2",
+						"v1",
+						"public",
+						"discos",
+						"get"
+					]
+				},
+				"description": "Esta solicitud GET obtiene una lista de todos los discos disponibles en el sistema. Al pulsar enviar debería devolver la información de todos los posts disponibles."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/ruiz_gonzalez_jesusangel_DWES03_TE2/v1/public/discos/getById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/ruiz_gonzalez_jesusangel_DWES03_TE2/v1/public/discos/get/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"ruiz_gonzalez_jesusangel_DWES03_TE2",
+						"v1",
+						"public",
+						"discos",
+						"get",
+						"8"
+					]
+				},
+				"description": "Esta solicitud GET obtendría un disco específico basado en su ID. Si se cambia el valor de \\`{{id}}\\` en la URL al ID del disco que quieres consultar y debería devolver los detalles de ese disco concreto."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/ruiz_gonzalez_jesusangel_DWES03_TE2/v1/public/discos/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"11\",\r\n    \"name\": \"Nuevo Disco\",\r\n    \"artist\": \"Nuevo Artista\",\r\n    \"type_of_music\": \"Rock\",\r\n    \"release_date\": \"2024-12-16\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/ruiz_gonzalez_jesusangel_DWES03_TE2/v1/public/discos/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"ruiz_gonzalez_jesusangel_DWES03_TE2",
+						"v1",
+						"public",
+						"discos",
+						"create"
+					]
+				},
+				"description": "Esta solicitud POST crearía un nuevo disco. En este caso, en el cuerpo de la solicitud se recibiría un JSON con los campos \\`id\\`, ' name', 'artist', 'type_of_music' y \\`release_date\\` que contendrían el id, nombre, artista, tipo de musica y fecha de lanzamiento del disco que se quiere guardar."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/ruiz_gonzalez_jesusangel_DWES03_TE2/v1/public/discos/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/ruiz_gonzalez_jesusangel_DWES03_TE2/v1/public/discos/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"ruiz_gonzalez_jesusangel_DWES03_TE2",
+						"v1",
+						"public",
+						"discos",
+						"create"
+					]
+				},
+				"description": "Esta solicitud POST daría error al no indicar los datos necesarios para la creación del nuevo registro."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/ruiz_gonzalez_jesusangel_DWES03_TE2/v1/public/discos/update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Disco Actualizado\",\r\n    \"artist\": \"Artista Actualizado\",\r\n    \"type_of_music\": \"Jazz\",\r\n    \"release_date\": \"2025-01-01\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/ruiz_gonzalez_jesusangel_DWES03_TE2/v1/public/discos/update/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"ruiz_gonzalez_jesusangel_DWES03_TE2",
+						"v1",
+						"public",
+						"discos",
+						"update",
+						"1"
+					]
+				},
+				"description": "Esta solicitud PUT actualiza un disco existente basándose en su ID. Si se cambia el valor de \\`{{id}}\\` al ID del post que quieres actualizar, editando los campos ' name', 'artist', 'type_of_music' y \\`release_date\\` en el cuerpo de la solicitud con los valores nuevos se modificaría el contenido de ese disco en concreto."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/ruiz_gonzalez_jesusangel_DWES03_TE2/v1/public/discos/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Disco Actualizado\",\r\n    \"artist\": \"Artista Actualizado\",\r\n    \"type of music\": \"Jazz\",\r\n    \"release_date\": \"2025-01-01\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/ruiz_gonzalez_jesusangel_DWES03_TE2/v1/public/discos/delete/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"ruiz_gonzalez_jesusangel_DWES03_TE2",
+						"v1",
+						"public",
+						"discos",
+						"delete",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/ruiz_gonzalez_jesusangel_DWES03_TE2/v1/public/discos/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/ruiz_gonzalez_jesusangel_DWES03_TE2/v1/public/discos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"ruiz_gonzalez_jesusangel_DWES03_TE2",
+						"v1",
+						"public",
+						"discos",
+						""
+					]
+				},
+				"description": "Esta solicitud DELETE elimina un disco específico por su ID. Si se cambia el valor de \\`{{id}}\\` al ID del disco que quieres eliminar, este se eliminaría al recibir y procesar la solicitud."
+			},
+			"response": []
+		}
+	]
+}
