@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1",
+    "name": "Disco Actualizado",
+    "artist": "Artista Actualizado",
+    "type_of_music": "Jazz",
+    "release_date": "2025-01-01"
+  },
+  {
+    "id": "2",
+    "name": "Shape of You",
+    "artist": "Ed Sheeran",
+    "type_of_music": "Pop",
+    "release_date": "2017-01-06"
+  },
+  {
+    "id": "3",
+    "name": "Dance Monkey",
+    "artist": "Tones and I",
+    "type_of_music": "Pop",
+    "release_date": "2019-05-10"
+  },
+  {
+    "id": "4",
+    "name": "Rockstar",
+    "artist": "Post Malone",
+    "type_of_music": "Hip Hop",
+    "release_date": "2017-09-15"
+  },
+  {
+    "id": "5",
+    "name": "Someone You Loved",
+    "artist": "Lewis Capaldi",
+    "type_of_music": "Pop",
+    "release_date": "2018-11-08"
+  },
+  {
+    "id": "6",
+    "name": "Sunflower",
+    "artist": "Post Malone, Swae Lee",
+    "type_of_music": "Hip Hop",
+    "release_date": "2018-10-18"
+  },
+  {
+    "id": "7",
+    "name": "Disco Actualizado",
+    "artist": "Artista Actualizado",
+    "type_of_music": "Jazz",
+    "release_date": "2025-01-01"
+  },
+  {
+    "id": "8",
+    "name": "Disco Actualizado",
+    "artist": "Artista Actualizado",
+    "type_of_music": "Jazz",
+    "release_date": "2025-01-01"
+  },
+  {
+    "id": "9",
+    "name": "Bad Guy",
+    "artist": "Billie Eilish",
+    "type_of_music": "Pop",
+    "release_date": "2019-03-29"
+  },
+  {
+    "id": "10",
+    "name": "Perfect",
+    "artist": "Ed Sheeran",
+    "type_of_music": "Pop",
+    "release_date": "2017-09-26"
+  }
+]
